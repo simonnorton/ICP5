@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>icp microblog</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </head>
+  <body>
+    <head><h1>ICP Microblog</h1></head>
+    <main>
+      <!--
+      <label for="usr">Author</label>
+      <textarea id="usr"></textarea>
+      <button id="set_name">Set Name</button>
+      <setcion id="get_name"></setcion>
+      <label for="message">what do you want to post?</label>
+      <textarea id="message"></textarea>
+      <label for="otp">OTP</label>
+      <input id="otp"></input>
+      <button id="post">Post</button>
+      &nbsp;<span id="error"></span>
+      <section id="posts"></section>
+      -->
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <div id="author" class="fs-4">ICP</div><span class="fs-4">Microblog</span>
+          </a>
+          
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" id="name" placeholder="new name">
+              <button type="submit" class="btn btn-secondary" id="rename_btn">rename</button>
+            </div>
+          </form>          
+        </header>
+      </div>
+
+      <div class="container">
+        <main>
+          <div class="bg-light rounded">
+            <h4>Post</h4>
+            <p><textarea id="content" style="width: 70%;"></textarea></p>
+            <p>secret:<input id="secret" style="width: 30%;"></input></p>
+            <button type="submit" class="btn btn-secondary" id="submit_post">SUBMIT</button>
+            <div style="color: red;" id="err"></div>
+          </div>
+          <div style="height: 10px;"></div>
+          <div class="row g-5">
+            <div class="col-md-5 col-lg-4 order-md-last">
+              <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-primary">follows</span>
+                <!-- <span class="badge bg-primary rounded-pill">3</span> -->
+              </h4>
+              <ul id="follows" class="list-group mb-3">
+                <!-- <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">PLiu</h6>
+                    <small class="text-muted">rrkah-fqaaa-aaaaa-aaaaq-cai</small>
+                  </div>
+                  <span class="text-muted">12</span>
+                </li>                 -->
+              </ul>
+            </div>
+
+            <div class="col-md-7 col-lg-8">         
+                <div class="d-flex justify-content-between align-items-center border-bottom pb-2 mb-0">
+                  <h4 class="text-primary">updates</h4>
+                  <!-- <span class="badge bg-primary rounded-pill">3</span> -->
+
+                  <!-- <small class="d-block text-end mt-3">
+                    <a href="#">All Posts</a>
+                  </small>                   -->
+                </div>    
+                
+                <div id="posts">
+                  <!-- <div class="d-flex text-muted pt-3">
+                    <svg class="bd-placeholder-img flex-shrink-0 me-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 32x32" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em">32x32</text></svg>
+              
+                    <div class="pb-3 mb-0 small lh-sm border-bottom w-100">
+                      <div class="d-flex justify-content-between">
+                        <strong class="text-gray-dark">Full Name</strong>
+                        <a href="#">Follow</a>
+                      </div>
+                      <span class="d-block">@username</span>
+                    </div>
+                  </div> -->
+                </div>
+            </div>            
+          </div>
+        </main>
+      
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">&copy; ICP5</p>
+          <ul class="list-inline">
+          </ul>
+        </footer>
+      </div>
+
+    </main>
+    <!--
+      <script src="bootstrap.bundle.min.js"></script>
+    -->
+  </body>
+</html>
